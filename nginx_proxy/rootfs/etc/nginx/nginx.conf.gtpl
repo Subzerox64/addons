@@ -33,8 +33,8 @@ http {
 
     server {
         server_name _;
-        listen 80 default_server;
-        listen 443 ssl default_server;
+        listen 0.0.0.0:80 default_server;
+        listen 0.0.0.0:443 ssl default_server;
         http2 on;
         ssl_reject_handshake on;
         return 444;
